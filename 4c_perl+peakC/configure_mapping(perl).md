@@ -21,9 +21,9 @@
 
 + Whenever you want to process fastq file, the first one to do is check the quality of fastq file.
 
-      ``` 
-fastqc file.fastq.gz -o output_path
-      ```
+  ```shell
+  fastqc file.fastq.gz -o output_path
+  ```
 
 + If quality is good then you can run the 4C mapping, otherwise you need processed raw fastq data to clean data. (For example : adapter error, bar code error) **(Note : cutadapter or trim_galore can be used to covert raw data to clean data)**.
 
@@ -36,11 +36,12 @@ The analysis pipeline consists of three steps.
 #### **1. Creating a fragment map**
 
 + To create a fragment map for you enzyme combination of choice please **run the generate_fragment_map.pl script.** 
+
 + For a fragment map for DpnII and CviQI of the human genome you would use the following command:
 
-      ```shell
-perl generate_fragment_map.pl ucsc.hg19.fa GATC GTAC fragment_map/
-      ```
+  ```shell
+  perl generate_fragment_map.pl ucsc.hg19.fa GATC GTAC fragment_map/
+  ```
 
 + GATC and GTAC is restriction enzyme cutting site of DpnII and CviQI, respectively.
 + The fragment map will be stored in the directory fragment_map/. (fragment_map/ is an existing directory)
