@@ -60,11 +60,11 @@ The analysis pipeline consists of three steps.
 
 + The results will be placed in the directory repeat/. （repeat/ is an existing directory. In this directory a new directory will created based on the sequence length option that is provided.)
 
-+ **Note : ** 
++ **Note :** 
 
-  1. **restriction_site : ** restriction site of the 1st restriction enzyme.
+  1. **restriction_site :** restriction site of the 1st restriction enzyme.
 
-  2. **49**  , this is the length of ligated fragment including the restriction site. For every different sequencing length for you 4C experiment, you will need to create new repeat map.
+  2. **49** , this is the length of ligated fragment including the restriction site. For every different sequencing length for you 4C experiment, you will need to create new repeat map.
 
      计算方法：如果测序片段长度是150， 引物长度是20, 实验采用的是 4碱基酶，那么这个连接片段的长度 是 150-20-4=134.
 
