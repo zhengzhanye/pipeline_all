@@ -92,16 +92,13 @@ The analysis pipeline consists of three steps.
 + To process and map your data please run **mapping_pipeline.pl**
 
   ```shell
-  perl mapping_pipeline.pl index_file out_dir fastq threads [fragment_map repeat_file]
+  perl mapping_pipeline.pl index_file mapping fastq threads [fragment_map repeat_file]
   ```
 
-  
-
-​     
 
 
 
-
++ The result will be placed in the directory in mapping/.
 
 
 
