@@ -35,7 +35,7 @@ The analysis pipeline consists of three steps.
 
 #### **1. Creating a fragment map**
 
-+ To create a fragment map for you enzyme combination of choice please **run the generate_fragment_map.pl script.** 
++ To create a fragment map for you enzyme combination of choice please **run the script/generate_fragment_map.pl script.** 
 
 + For a fragment map for DpnII and CviQI of the human genome you would use the following command:
 
@@ -52,7 +52,7 @@ The analysis pipeline consists of three steps.
 
 + This step is to filter the fragment map for repetitive fragment, therefore we should map all the fragment back to the genome then selected them from to test whether they are unique or not.
 
-+ To identify the repetitive fragments please **run the getRepeats.pl script.**
++ To identify the repetitive fragments please **run the script/getRepeats.pl script.**
 
   ```shell
   perl getRepeats.pl fragment_map/ restriction_site 49 ucsc.hg19.fa repeat/ [threads]
@@ -89,7 +89,7 @@ The analysis pipeline consists of three steps.
   2. The reference should also have **bwa index.**
   3. Given the current setup it is not possible to mix restriction enzyme combination or reference genomes. If you have multiple genomes or multiple restriction enzyme combinations please create a separate index file for each one.
 
-+ To process and map your data please run **mapping_pipeline.pl**
++ To process and map your data please run **script/mapping_pipeline.pl**
 
   ```shell
   perl mapping_pipeline.pl index_file mapping fastq threads [fragment_map repeat_file]
